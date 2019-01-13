@@ -62,9 +62,9 @@ include('header.php');
           </ul>
           <p style="text-align: justify;">The first objective was met in full. As for the second, studies of the main alternatives (using the multiplatform <a href="http://www.lazarus.freepascal.org/index.php">Lazarus</a> and migration to the platform .Net under <a href="http://www.mono-project.com/Main_Page">MONO</a>) were developed. After contacting teams of developers of those tools and environments, and also preliminary testing, we finally reach the conclusion that, in both cases, it would be an overwhelming task and the final results unreliable.</p>
           <p style="text-align: justify;">The <a href="http://www.embarcadero.com/">Embarcadero</a>, after the acquisition of the compilers from <a href="http://www.borland.com/">Borland</a>, has made serious efforts to enable the compilation of code in Object Pascal/Delphi available in other platforms, beyond Windows. Thus, it is envisaged in the medium and long term, the possibility of porting the Tinn-R project for <a href="http://en.wikipedia.org/wiki/Linux">Linux</a> and <a href="http://www.apple.com/">Mac</a>.</p>
-          <a href="#" class="right waves-effect waves-light">
-            <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top"><input name="cmd" type="hidden" value="_s-xclick" /><input class="ponteiro" name="hosted_button_id" type="hidden" value="B5GDCSVXH6JV4" /><input class="ponteiro" alt="PayPal - The safer, easier way to pay online!" name="submit" src="https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif" type="image" /><img src="https://www.paypalobjects.com/pt_BR/i/scr/pixel.gif" alt="" width="1" height="1" border="0" /></form>
-          </a>
+          <div class="row center">
+            <a href="donate.php" class="btn waves-effect waves-light orange">Make a Donation  <i class="fa fa-gift fa-2x"></i></a>
+          </div>
         </span>
       </div>
     </div>

@@ -32,48 +32,111 @@
     </div>
   </div>
 
-  <div class="section card">
+  <style type="text/css">
+    hr.style14 { 
+      border: 0; 
+      height: 1px; 
+      background-image: -webkit-linear-gradient(left, #f0f0f0, #8c8b8b, #f0f0f0);
+      background-image: -moz-linear-gradient(left, #f0f0f0, #8c8b8b, #f0f0f0);
+      background-image: -ms-linear-gradient(left, #f0f0f0, #8c8b8b, #f0f0f0);
+      background-image: -o-linear-gradient(left, #f0f0f0, #8c8b8b, #f0f0f0); 
+    }
+    .remove-pad-left{
+      padding-left: 0 !important;
+    }
+    .quote{
+      letter-spacing: 1px;
+      font-size: 18px;
+    }
+    .person-title{
+      font-weight: 300;
+    }
+    .contributor{
+      font-size: 17px;
+    }
+    .contributor a{ 
+      color: inherit; 
+    }
+    .sublinhado{
+      color: inherit; 
+      text-decoration: underline;
+    }
+    .contributors-subtitle{
+      padding-left: 2px;
+      margin-top: -15px;
+    }
+  </style>
+
+  <div class="section card grey lighten-5">
     <div class="container">
       <div class="row">
-        <h4 class="menor center grey-text text-darken-2">Desenvolvedores</h4>
-        <div class="col m8 offset-m2 center">
-          <h5 class="menor"><a href="http://nbcgib.uesc.br/lec/professores/jcfaria/pag-pessoal/pt">José Cláudio Faria</a> </h5>
-          <i>Brasil/UESC/DCET</i>
-          <br>
-          Coordenação, desenvolvimento e programação em Object Pascal
-          <br>
-          <br>
-
-          <h5 class="menor"><a href="http://website.informer.com/visit?domain=sciviews.org">Philippe Grosjean</a> </h5>
-          <i>Bélgica/UMH/EcoNum</i> 
-          <br>
-          Programação em R, experiência no desenvolvimento de GUIs para o R, excelentes idéias e sugestões, direcionamento do projeto e documentação inicial do projeto na língua Inglesa. Na verdade, grande parte do sucesso do projeto se deve às boas sugestões - ao longo dos anos - do Phill: Muito obrigado!
-          <br> 
-          <br> 
-
-          <h5 class="menor"><a href="http://nbcgib.uesc.br/lec/professores/enio/pag-pessoal">Enio Galinkin Jelihovschi</a> </h5>
-          <i>Brasil/UESC/DCET</i> 
-          <br> 
-          Documentação na língua Inglesa
-          <br> 
-          <br> 
-
-          <h5 class="menor"><a href="http://duke.academia.edu/RicardoPietrobon">Ricardo Pietrobon</a> </h5>
-          <i>EUA/Duke University</i> 
-          <br> 
-          Revisor da documentação na língua Inglesa
-          <br> 
-          <br>
-
-          <h5 class="menor"><a href="">Philiphe A. R. Kramer</a> </h5>
-          <i>Brasil/UESC</i> 
-          <br> 
-          Desenvolvimento e Web Designer
-          <br> 
-          <br> 
-
+        <div class="col m3">
+          <h4 class="menor person-title grey-text text-darken-2">Coordenadores</h4>
+        </div>
+        <div class="col m8 offset-m1">
+          <h5 class="menor"><a href="http://nbcgib.uesc.br/lec/professores/jcfaria/pag-pessoal/en" target="_blank">José Cláudio Faria</a></h5>
+            Universidade Estadual de Santa Cruz<br>
+            Departamento de Ciências Exatas e Tecnológicas - DCET<br>
+            UESC / BA / BRASIL <br> <br>
         </div>
       </div>
+      <hr class="style14">
+      <div class="row">
+        <br>
+        <div class="col m3">
+          <h4 class="menor person-title grey-text text-darken-2">Desenvolvedores Ativos</h4>
+        </div>
+        <div class="col m8 offset-m1">
+          <div class="col m6 remove-pad-left">
+            <h5 class="menor"><a href="http://nbcgib.uesc.br/lec/professores/jcfaria/pag-pessoal/en" target="_blank">José Cláudio Faria</a></h5>
+              Brasil<br>
+              <a href="mailto:joseclaudio.faria@gmail.com" class="sublinhado">joseclaudio.faria@gmail.com</a><br><br>
+          </div>
+          <div class="col m6 remove-pad-left">
+            <h5 class="menor"><a href="#" onclick="return false;">Philiphe A. R. Kramer</a></h5>
+              Suíça<br>
+              <a href="mailto:pharkrum@gmail.com" class="sublinhado">pharkrum@gmail.com</a><br><br>
+          </div>
+        </div>
+      </div>
+      <hr class="style14">
+      <div class="row">
+        <div class="col m3">
+          <h4 class="menor person-title grey-text text-darken-2">Contribuidores</h4>
+          <!-- <p class="contributors-subtitle grey-text">Historical Order</p> -->
+        </div>
+        <div class="col m8 offset-m1">
+          <br>
+          <div class="row">
+            <div class="col m4 contributor s12">
+              Marco de Groot
+            </div>
+            <div class="col m4 contributor s12">
+              <a href="http://website.informer.com/visit?domain=sciviews.org" target="_blank">Philippe Grosjean</a>
+            </div>
+            <div class="col m4 contributor s12">
+              Huashan Chen
+            </div>
+          </div>
+          <div class="row">
+            <div class="col m4 contributor s12">
+              <a href="http://nbcgib.uesc.br/lec/professores/enio/pag-pessoal" target="_blank">Enio Galinkin Jelihovschi</a>
+            </div>
+            <div class="col m4 contributor s12">
+              <a href="http://duke.academia.edu/RicardoPietrobon">Ricardo Pietrobon</a>
+            </div>
+            <div class="col m4 contributor s12">
+              Philipe Silva Farias
+            </div>
+          </div>
+          <div class="row">
+            <div class="col m4 contributor s12">
+              Swami de P. Lima
+            </div>
+          </div>
+        </div>
+      </div>
+      <p class="center orange-text quote text-darken-3">O Tinn-R não seria o que é sem todos os colaboradores, muito obrigado!</p>
     </div>
   </div>
 

@@ -50,27 +50,15 @@
           <li><a class="white-text" href="about.php">About</a></li>
           <li><a class="white-text" href="download.php">Download</a></li>
           <li><a class="white-text" href="https://groups.google.com/forum/?hl=en#!forum/tinn-r" target="_blank">Forum<i class="fa fa-external-link right"></i></a></li>
-          <li>
-            <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_blank">
-                <input  class="ponteiro" name="cmd" type="hidden" value="_s-xclick" />
-                <input class="ponteiro" name="hosted_button_id" type="hidden" value="B5GDCSVXH6JV4" />
-                <input style="vertical-align: middle" class="ponteiro center-align" alt="PayPal - The safer, easier way to pay online!" name="submit" src="assets/img/donate.png" type="image" />
-            </form>
-          </li>
+          <li><a class="white-text" href="donate.php">Donate<i class="fa fa-gift fa-2x right"></i></a></li>
         </ul>
 
         <ul id="nav-mobile" class="side-nav">
           <li><a  href="index.php">Home</a></li>
-          <li><a  href="sobre.php">Sobre</a></li>
+          <li><a  href="about.php">About</a></li>
           <li><a  href="download.php">Download</a></li>
-          <li><a  href="https://groups.google.com/forum/?hl=en#!forum/tinn-r">Fórum<i class="fa fa-external-link right"></i></a></li>
-          <li>
-            <form action="https://www.paypal.com/cgi-bin/webscr" method="post">
-                <input  class="ponteiro" name="cmd" type="hidden" value="_s-xclick" />
-                <input class="ponteiro" name="hosted_button_id" type="hidden" value="B5GDCSVXH6JV4" />
-                <input style="vertical-align: middle;padding: 0px 32px 0px 32px" class="ponteiro center-align" alt="PayPal - The safer, easier way to pay online!" name="submit" src="assets/img/donate.png" type="image" />
-            </form>
-          </li>
+          <li><a  href="https://groups.google.com/forum/?hl=en#!forum/tinn-r">Forum<i class="fa fa-external-link right"></i></a></li>
+          <li><a  href="donate.php">Donate<i class="fa fa-gift fa-2x right"></i></a></li>
         </ul>
         <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="white-text material-icons">menu</i></a>
       </div>

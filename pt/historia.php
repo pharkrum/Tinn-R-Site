@@ -64,9 +64,9 @@
           </ul>
           <p>O primeiro objetivo foi cumprido na íntegra. Quanto ao segundo, estudos das principais alternativas (uso da IDE multiplataforma <a href="http://www.lazarus.freepascal.org/index.php">Lazarus</a> e Migração para a plataforma .Net sob <a href="http://www.mono-project.com/Main_Page">MONO</a>) foram desenvolvidos. Após contatos com as equipes desenvolvedoras destes ambientes e ferramentas, assim como a realização de testes preliminares, concluiu-se que, em ambos os casos, seria uma tarefa exaustiva e de resultados finais duvidosos.</p>
           <p>A <a href="http://www.embarcadero.com/">Embarcadero</a>, após a aquisição da linha de compiladores da <a href="http://www.borland.com/br/">Borland</a>, tem feito esforços sérios no sentido de permitir a compilação do código em Object Pascal/Delphi para outras plataformas, além do Windows. Dessa forma vislumbra-se, a médio e longo prazo, a possibilidade de portabilidade do projeto para <a href="http://pt.wikipedia.org/wiki/Linux">Linux</a> e <a href="http://www.apple.com/br/mac/">Mac</a>.</p>
-          <a href="#" class="right waves-effect waves-light">
-              <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top"><input name="cmd" type="hidden" value="_s-xclick" /><input class="ponteiro" name="hosted_button_id" type="hidden" value="B5GDCSVXH6JV4" /><input class="ponteiro" alt="PayPal - The safer, easier way to pay online!" name="submit" src="https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif" type="image" /><img src="https://www.paypalobjects.com/pt_BR/i/scr/pixel.gif" alt="" width="1" height="1" border="0" /></form>
-            </a>
+          <div class="row center">
+          	<a href="doe.php" class="btn waves-effect waves-light orange">Faça uma doação  <i class="fa fa-gift fa-2x"></i></a>
+      	  </div>
         </span>
         </div>
       </div>
