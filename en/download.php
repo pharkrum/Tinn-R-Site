@@ -2,10 +2,31 @@
   include('header.php');
 ?>
 
+<?php
+  $url_WinVersion="http://nbcgib.uesc.br/lec/update/new_version.txt";
+  $url_PortVersio="http://nbcgib.uesc.br/lec/update/new_version_portable.txt";
+  $agent= 'Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; SV1; .NET CLR 1.0.3705; .NET CLR 1.1.4322)';
+
+  //Utilizando php CURL para acessar URL's.
+  $ch = curl_init();
+  curl_setopt($ch, CURLOPT_SSL_VERIFYPEER, false);
+  curl_setopt($ch, CURLOPT_VERBOSE, true);
+  curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
+  curl_setopt($ch, CURLOPT_USERAGENT, $agent);
+  curl_setopt($ch, CURLOPT_URL,$url_WinVersion);
+  $update_link=curl_exec($ch);
+  $dados_download = explode("\n", $update_link); 
+  //dados_download[0] = Link de download windows
+  //dados_download[1] = Link de download portavel 
+  //dados_download[2] = Data de release
+  //dados_download[3] = versão do software
+?>
+
   <div class="section">
     <div class="container" style="padding: 20px 0px 10px 0px;">
       <div class="row">
         <h4 class="center grey-text text-darken-2">Download Tinn-R</h4>
+        <h6 class="center grey-text text-darken-3">v<?php echo $dados_download[3] ?></h6>
         <h6 class="center grey-text text-darken-2">Available for Windows <i class="fa fa-windows"></i></h6>
       </div>
     </div>
@@ -20,32 +41,8 @@
               <span class="card-title">Tinn-R Setup</span>
               <p>Executable in desktop version for Windows operating system.<br>&nbsp</p>
             </div>
-            <?php
-              $url_WinVersion="http://nbcgib.uesc.br/lec/update/new_version.txt";
-              $url_PortVersio="http://nbcgib.uesc.br/lec/update/new_version_portable.txt";
-              $agent= 'Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; SV1; .NET CLR 1.0.3705; .NET CLR 1.1.4322)';
-
-              //Utilizando php CURL para acessar URL's.
-              $ch = curl_init();
-              curl_setopt($ch, CURLOPT_SSL_VERIFYPEER, false);
-              curl_setopt($ch, CURLOPT_VERBOSE, true);
-              curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
-              curl_setopt($ch, CURLOPT_USERAGENT, $agent);
-              curl_setopt($ch, CURLOPT_URL,$url_WinVersion);
-              $download_win_link=curl_exec($ch);
-              $download_win_link = explode("\n", $download_win_link); // Gera dois arrays um com um link e outro com a data de release
-
-              $ch = curl_init();
-              curl_setopt($ch, CURLOPT_SSL_VERIFYPEER, false);
-              curl_setopt($ch, CURLOPT_VERBOSE, true);
-              curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
-              curl_setopt($ch, CURLOPT_USERAGENT, $agent);
-              curl_setopt($ch, CURLOPT_URL,$url_PortVersio);
-              $download_port_link=curl_exec($ch);
-              $download_port_link = explode("\n", $download_port_link); // Gera dois arrays um com um link e outro com a data de release
-              ?>
             <div class="card-action center">
-              <a class="waves-effect waves-light btn orange lighten-1"  href="<?php echo $download_win_link[0];?>"><i class="material-icons left">file_download</i>Download</a>
+              <a class="waves-effect waves-light btn orange lighten-1"  href="<?php echo $dados_download[0];?>"><i class="material-icons left">file_download</i>Download</a>
             </div>
           </div>
         </div>
@@ -56,7 +53,7 @@
               <p>Portable version that works from any synchronized cloud folder, from an external or internal drive.</p>
             </div>
             <div class="card-action center">
-              <a class="waves-effect waves-light btn orange lighten-1" href="<?php echo $download_port_link[0];?>"><i class="material-icons left">file_download</i>Download</a>
+              <a class="waves-effect waves-light btn orange lighten-1" href="<?php echo $dados_download[1];?>"><i class="material-icons left">file_download</i>Download</a>
             </div>
           </div>
         </div>
