@@ -8,5 +8,4 @@ ALL PHP, SEO and language controlling were done manually
 
 
 ![](https://github.com/pharkrum/Tinn-R-Website/tree/master/assets/img/opensource.png)
-![](https://github.com/pharkrum/Tinn-R-Website/tree/master/assets/img/uesclogo.png)
-![](https://github.com/pharkrum/Tinn-R-Website/blob/master/assets/img/favicon/android-icon-144x144.png)
+
