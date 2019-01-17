@@ -1,4 +1,6 @@
 <?php
+  $title = "IDE/Editor for R Language | Tinn-R";
+  $description = "Download Tinn-R for free. Tinn-R Editor - GUI for R Language and Environment. The Tinn-R is an open source and free project. It is an editor/word processor generic for the Windows, very well integrated into the R, with Graphical User Interface (GUI) and Integrated Development Environment (IDE).";
   include('header.php');
 ?>
 
@@ -12,17 +14,17 @@
         </div>
         <div class="row center">
           <div class="col s6 m4 offset-m2">
-            <a href="download.php" id="download-button" class="btn-large waves-effect waves-light orange lighten-1">Download</a> 
+            <a href="download" id="download-button" class="btn-large waves-effect waves-light orange lighten-1">Download</a> 
           </div>
           <div class="col s6 m4">
-            <a href="download.php#patch" id="download-button" class="btn-large waves-effect waves-light orange lighten-1">Changelog</a>
+            <a href="download#patch" id="download-button" class="btn-large waves-effect waves-light orange lighten-1">Changelog</a>
           </div>
         </div>
         <br><br>
 
       </div>
     </div>
-    <div class="parallax"><img src="assets/img/background1.jpg" alt="Unsplashed background img 1"></div>
+    <div class="parallax"><img src="../assets/img/background1.jpg" alt="Frontpage background"></div>
   </div>
 
   <div class="container" id="about">
@@ -99,14 +101,14 @@
         </div>
       </div>
       <div class="row">
-        <p class="center"><a href="download.php" id="download-button" class="btn waves-effect waves-light orange lighten-1">Download!</a></p>
+        <p class="center"><a href="download" id="download-button" class="btn waves-effect waves-light orange lighten-1">Download!</a></p>
       </div>
     </div>
   </div>
 
   <div class="container">
     <div class="col s12">
-      <img class="responsive-img" src="assets/img/tinn.jpg">
+      <img class="responsive-img" src="../assets/img/tinn.jpg" alt="Tinn-R Interface Screenshot">
     </div>
   </div>
 

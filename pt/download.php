@@ -1,4 +1,6 @@
 <?php
+  $title = "Baixe Grátis | Tinn-R";
+  $description = "Faça o download gratuito do Tinn-R. Dispoível para Windows e PortableApps.";
   include('header.php');
 ?>
 <?php
@@ -18,14 +20,14 @@
   //dados_download[0] = Link de download windows
   //dados_download[1] = Link de download portavel 
   //dados_download[2] = Data de release
-  //dados_download[3] = versão do software
+  preg_match('/\d{1}\.\d{2}\.\d{2}\.\d{2}(?=_setup.exe)/', $dados_download[0], $setup_version);
+  preg_match('/\d{1}\.\d{2}\.\d{2}\.\d{2}(?=_portable.zip)/', $dados_download[1], $portable_version);
 ?>
 
   <div class="section">
     <div class="container" style="padding: 20px 0px 10px 0px;">
       <div class="row">
         <h4 class="center grey-text text-darken-2">Baixe o Tinn-R</h4>
-        <h6 class="center grey-text text-darken-3">v<?php echo $dados_download[3] ?></h6>
         <h6 class="center grey-text text-darken-2">Disponível para Windows <i class="fa fa-windows"></i></h6>
       </div>
     </div>
@@ -37,11 +39,12 @@
         <div class="col s12 m4 offset-m2">
           <div class="card">
             <div class="card-content">
-              <span class="card-title">Tinn-R Setup</span>
+              <span class="card-title">Tinn-R Windows</span>
+              <h6 class="grey-text text-darken-1"><?php echo $setup_version[0] ?></h6>
               <p>Executável em versão desktop para o sistema operacional Windows.<br>&nbsp</p>
             </div>
             <div class="card-action center">
-              <a class="waves-effect waves-light btn orange lighten-1"  href="<?php echo $dados_download[0];?>"><i class="material-icons left">file_download</i>Download</a>
+              <a class="waves-effect waves-light btn orange lighten-1"  href="<?php echo $dados_download[0];?>"><i class="material-icons left">file_download</i>Baixar</a>
             </div>
           </div>
         </div>
@@ -49,10 +52,11 @@
           <div class="card">
             <div class="card-content">
               <span class="card-title">Versão Portável</span>
+              <h6 class="grey-text text-darken-1"><?php echo $portable_version[0] ?></h6>
               <p>Versão portável que funciona a partir de qualquer pasta de nuvem sincronizada, de uma unidade externa ou interna.</p>
             </div>
             <div class="card-action center">
-              <a class="waves-effect waves-light btn orange lighten-1" href="<?php echo $dados_download[1];?>"><i class="material-icons left">file_download</i>Download</a>
+              <a class="waves-effect waves-light btn orange lighten-1" href="<?php echo $dados_download[1];?>"><i class="material-icons left">file_download</i>Baixar</a>
             </div>
           </div>
         </div>
@@ -66,18 +70,18 @@
     </div>
   </div>
 
-  <div class="section grey lighten-3" style="padding: 80px 0px 80px 0px; background-image: url(assets/img/lines.jpg); background-size: cover">
+  <div class="section grey lighten-3" style="padding: 80px 0px 80px 0px; background-image: url(../assets/img/lines.jpg); background-size: cover">
     <div class="container">
       <div class="row center">
         <div class="col m2 s4 offset-m1 hide-on-small-only">
-          <img class="responsive-img"  src="assets/img/opensource.png">
+          <img class="responsive-img"  src="../assets/img/opensource.png" alt="Logo do Open Source">
         </div>
         <div class="col m8 s12">
           <div class="row">
             <h5>Open Source e Freeware</h5>
             <p class="spaced">Baixe o nosso código fonte a qualquer momento, se torne também um desenvolvedor. Fork it!</p>
             <a href="https://github.com/jcfaria/Tinn-R" id="download-button" class="btn waves-effect waves-light orange lighten-1 espaco" target="_blank">Código Fonte (GitHub <i class="fa fa-github"></i>)</a>
-            <a href="doe.php" class="btn waves-effect waves-light orange darken-3 espaco">Faça uma doação  <i class="fa fa-gift fa-2x"></i></a>          
+            <a href="donation" class="btn waves-effect waves-light orange darken-3 espaco">Faça uma doação  <i class="fa fa-gift fa-2x"></i></a>          
           </div>
         </div>
       </div>

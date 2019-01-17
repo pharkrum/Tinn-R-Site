@@ -2,9 +2,19 @@
 <br>
 <footer class="page-footer orange lighten-1">
   <div class="center" style="padding-bottom:10px;">
-    <a href="../pt" class="white-text text-darken-1">Português (Brasil)</a>
-    <a style="margin-left:5px;" href="../en" class="black-text text-darken-1">English (US)</a>
-  </div>
+    <div class="row" style="margin-bottom:0px;"> 
+      <div class="container">
+        <div class="col" style="padding:0px;padding-top:2px;"><i class="material-icons white-text left-align">language</i></div>
+          <div class="col m2" style="padding:0px;"> 
+            <select class="browser-default white-text" style="height: 2rem;font-size: 0.9rem;border: 0px solid #fff;background-color: transparent;" onchange="location = this.value;">
+              <option value="/tinnr/en/<?php echo $page_name ?>" class="black-text" style="font-size: 0.9rem;">English</option>
+              <option value="/tinnr/pt/<?php echo $page_name ?>" class="black-text" style="font-size: 0.9rem;">Português (Brasil)</option>
+            </select>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div> 
   <div class="footer-copyright">
       <div class="container">
         <span>Made by <a class="brown-text text-lighten-4" href="mailto:pharkrum@gmail.com">Philiphe Kramer</a></span>
@@ -21,8 +31,8 @@
 
   <!--  Scripts-->
   <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
-  <script src="assets/js/materialize.js"></script>
-  <script src="assets/js/init.js"></script>
+  <script src="../assets/js/materialize.js"></script>
+  <script src="../assets/js/init.js"></script>
 
   </body>
 </html>

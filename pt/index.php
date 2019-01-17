@@ -1,4 +1,6 @@
 <?php
+  $title = "IDE/Editor para Linguagem R | Tinn-R";
+  $description = "Baixe o Tinn-R gratuitamente. O Tinn-R é uma interface gráfica e ambiente para linguagem R. O Tinn-R é open source e grátis. É um editor/processador de texto generico para windows, muito bem integrado com o R, incluindo interface gráfica (GUI) e ambiente de desenvolvimento integrado(IDE).";
   include('header.php');
 ?>
 
@@ -12,17 +14,17 @@
         </div>
         <div class="row center">
           <div class="col s6 m4 offset-m2">
-            <a href="download.php" id="download-button" class="btn-large waves-effect waves-light orange lighten-1">Download</a> 
+            <a href="download" id="download-button" class="btn-large waves-effect waves-light orange lighten-1">Download</a> 
           </div>
           <div class="col s6 m4">
-            <a href="download.php#patch" id="download-button" class="btn-large waves-effect waves-light orange lighten-1">Novidades</a>
+            <a href="download#patch" id="download-button" class="btn-large waves-effect waves-light orange lighten-1">Novidades</a>
           </div>
         </div>
         <br><br>
 
       </div>
     </div>
-    <div class="parallax"><img src="assets/img/background1.jpg" alt="Unsplashed background img 1"></div>
+    <div class="parallax"><img src="../assets/img/background1.jpg" alt="Imagem de fundo inicial"></div>
   </div>
 
   <div class="container" id="about">
@@ -99,14 +101,14 @@
         </div>
       </div>
       <div class="row">
-        <p class="center"><a href="download.php" id="download-button" class="btn waves-effect waves-light orange lighten-1">Baixe agora!</a></p>
+        <p class="center"><a href="download" id="download-button" class="btn waves-effect waves-light orange lighten-1">Baixe agora!</a></p>
       </div>
     </div>
   </div>
 
   <div class="container">
     <div class="col s12">
-      <img class="responsive-img" src="assets/img/tinn.jpg">
+      <img class="responsive-img" src="../assets/img/tinn.jpg" alt="Captura de tela do Tinn-r">
     </div>
   </div>
 

@@ -1,0 +1,8 @@
+#Leia sobre:
+#http://www.devwilliam.com.br/extra/web/arquivos-htaccess-apache
+
+# Remover o .php do final das urls
+RewriteEngine on
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME}\.php -f
+RewriteRule ^(.*)$ $1.php

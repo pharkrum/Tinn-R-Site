@@ -1,4 +1,6 @@
 <?php
+  $title = "About us | Tinn-R";
+  $description = "Learn all about the Tinn-R project. Know the development history, Read our E-BOOK, Meet the developers and see the screenshots of the software in operation.";
   include('header.php');
 ?>
   <div class="section">
@@ -19,13 +21,13 @@
            <a href="#screenshots">See the screenshots</a>
         </div>
         <div class="col s12 m4 right hide-on-small-only">
-          <img class="responsive-img" src="assets/img/1.png">
+          <img class="responsive-img" src="../assets/img/1.png" alt="Notebook with Tinn-R installed">
         </div>
       </div>
       <div class="row">
         <div class="row center">
           <div class="col m3 s12 espaco"><a href="http://nbcgib.uesc.br/lec/download/ebooks/Tinn-R%20eBook_RII.pdf" id="download-button" class="btn waves-effect waves-light orange " target="_blank" >E-Book</a></div>
-          <div class="col m3 s12 espaco"><a href="history.php" id="download-button" class="btn waves-effect waves-light orange" >Tinn-R history</a></div>
+          <div class="col m3 s12 espaco"><a href="history" id="download-button" class="btn waves-effect waves-light orange" >Tinn-R history</a></div>
           <div class="col m3 s12 espaco"><a href="http://nbcgib.uesc.br/lec/" id="download-button" class="btn waves-effect waves-light orange" target="_blank" >About LEC</a></div>
           <div class="col m3 s12"><a href="http://www.uesc.br" id="download-button" class="btn waves-effect waves-light orange" target="_blank">About UESC</a></div>
         </div>
@@ -113,7 +115,7 @@
               Marco de Groot
             </div>
             <div class="col m4 contributor s12">
-              <a href="http://website.informer.com/visit?domain=sciviews.org" target="_blank">Philippe Grosjean</a>
+              <a href="http://phgrosjean.sciviews.org" target="_blank">Philippe Grosjean</a>
             </div>
             <div class="col m4 contributor s12">
               Huashan Chen
@@ -144,16 +146,16 @@
     <div class="section " id="screenshots">
     <div class="container" style="padding: 20px 0px 10px 0px;">
       <div class="row">
-        <h4 class="center">Screenshoots</h4>
+        <h4 class="center">Screenshots</h4>
         <div class="row">
-          <div class="col m4"><img class="z-depth-1 materialboxed responsive-img" width="650" src="assets/img/tinn.jpg"></div>
-          <div class="col m4"><img class="z-depth-1 materialboxed responsive-img" width="650" src="assets/img/explorer.jpg"></div>
-          <div class="col m4"><img class="z-depth-1 materialboxed responsive-img" width="650" src="assets/img/plot.jpg"></div>
+          <div class="col m4"><img class="z-depth-1 materialboxed responsive-img" width="650" src="../assets/img/tinn.jpg" alt="Screenshot 1"></div>
+          <div class="col m4"><img class="z-depth-1 materialboxed responsive-img" width="650" src="../assets/img/explorer.jpg" alt="Screenshot 2"></div>
+          <div class="col m4"><img class="z-depth-1 materialboxed responsive-img" width="650" src="../assets/img/plot.jpg" alt="Screenshot 3"></div>
         </div>
         <div class="row">
-          <div class="col m4"><img class="z-depth-1 materialboxed responsive-img" width="650" src="assets/img/options.jpg"></div>
-          <div class="col m4"><img class="z-depth-1 materialboxed responsive-img" width="650" src="assets/img/highlight.jpg"></div>
-          <div class="col m4"><img class="z-depth-1 materialboxed responsive-img" width="650" src="assets/img/shortcurts.jpg"></div>
+          <div class="col m4"><img class="z-depth-1 materialboxed responsive-img" width="650" src="../assets/img/options.jpg" alt="Screenshot 4"></div>
+          <div class="col m4"><img class="z-depth-1 materialboxed responsive-img" width="650" src="../assets/img/highlight.jpg" alt="Screenshot 5"></div>
+          <div class="col m4"><img class="z-depth-1 materialboxed responsive-img" width="650" src="../assets/img/shortcurts.jpg" alt="Screenshot 6"></div>
         </div>
       </div>
     </div>
